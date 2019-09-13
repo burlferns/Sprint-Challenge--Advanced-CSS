@@ -1,1 +1,49 @@
 // Mixins Here
+.padl(@v) {
+    padding-left:@v;
+}
+
+.padr(@v) {
+    padding-right:@v;
+}
+
+.padt(@v) {
+    padding-top:@v;
+}
+
+.padb(@v) {
+    padding-bottom:@v;
+}
+
+.marl(@v) {
+    margin-left:@v;
+}
+
+.marr(@v) {
+    margin-right:@v;
+}
+
+.mart(@v) {
+    margin-top:@v;
+}
+
+.marb(@v) {
+    margin-bottom:@v;
+}
+
+.centerCenter() {
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+//****** Button mixin
+.styleBtn(@btnColor, @txtColor) {
+    background-color: @btnColor;
+    color:@txtColor;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
