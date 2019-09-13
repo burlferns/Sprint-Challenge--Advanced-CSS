@@ -264,7 +264,6 @@ footer {
 @media (max-width: 500px) {
   .home .walk {
     flex-direction: column-reverse;
-    align-items: stretch;
     padding-top: 10px;
     padding-bottom: 10px;
     width: 98%;
@@ -277,6 +276,7 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-text {
     width: 100%;
+    margin: 0;
   }
 }
 .home .walk .walk-text h3 {
@@ -288,13 +288,18 @@ footer {
 .home .walk .walk-text .btn {
   background-color: black;
   color: white;
-  border-radius: 1rem;
   text-align: center;
   font-size: 1.6rem;
   border-radius: 0.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
   height: 3.2rem;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-size: 1.6rem;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {

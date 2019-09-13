@@ -72,7 +72,6 @@
 
     @media @phone {
       flex-direction: column-reverse;
-      // align-items: stretch;
       .padt(10px);
       .padb(10px);
       width: 98%;
@@ -82,8 +81,10 @@
     .walk-text {
       width: 50%;
 
+
       @media @phone {
         width: 100%;
+        margin:0;
         // margin:0 auto;
       }
 
@@ -101,6 +102,10 @@
         .padl(2rem);
         .padr(2rem);
         height:1.6rem*2;
+
+        &:hover {
+          .styleBtn(white, black);
+        }
 
         @media @phone {
           width: 100%;
