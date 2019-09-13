@@ -268,6 +268,8 @@ footer {
     padding-bottom: 10px;
     width: 98%;
     margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .home .walk .walk-text {
@@ -313,8 +315,9 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {
-    width: 100%;
-    margin: 0;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
   }
 }
 .home .walk .walk-img img {
