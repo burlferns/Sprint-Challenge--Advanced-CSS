@@ -4,12 +4,21 @@
 
   .intro {
 
+    img {
+      width:100%;
+      border-radius: 0.5rem;
+    }
+
     h2 {
       padding: 15px;
+      width:95%;
+      margin: 0 auto;
     }
 
     p {
       padding:0 15px;
+      width:95%;
+      margin: 0 auto;
     }
   
   }
@@ -25,6 +34,21 @@
       border-radius: 20px;
       height: 100%;
     }
+
+    .sky, .launch {
+      @media @phone {
+        display:none;
+      }
+    }
+
+    .blast {
+      @media @phone {
+        width:80%;
+        margin:0 auto;
+        .mart(2rem);
+      }
+    }
+
   }
 
   .visit-planets {
@@ -46,8 +70,25 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column-reverse;
+      .padt(10px);
+      .padb(10px);
+      .centerHorizontally();
+      // width: 98%;
+      // margin:0 auto;
+      .padl(0);
+      .padr(0);
+    }
+
     .walk-text {
       width: 50%;
+
+
+      @media @phone {
+        width: 100%;
+        margin:0;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +99,34 @@
       }
 
       .btn {
+        .styleBtn(black, white);
+        border-radius: 0.5rem;
+        .padl(2rem);
+        .padr(2rem);
+        height:1.6rem*2;
+
+        &:hover {
+          .styleBtn(white, black);
+        }
+
+        @media @phone {
+          width: 100%;
+          height:1.6rem*3;
+        }
+
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 80%;
+        margin:0 auto;
+        .marb(1rem);
+        
+      }
       
       img {
         width: 100%;
@@ -71,5 +134,27 @@
         border-radius: 10px;
       }
     }
+
+
+    //***** For debugging purposes - comment out after use
+    // background-color: black;
+
+    // border:1px solid black;
+    // * {
+    //     border:1px solid black;
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
 }// home

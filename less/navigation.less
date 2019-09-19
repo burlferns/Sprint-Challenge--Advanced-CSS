@@ -1,1 +1,56 @@
 // Navigation code here
+.nav-container {
+    width: 100%;
+    border:1px solid @sea-shell;
+    background-color: @wild-sand;
+
+    .navSection {
+        max-width: 800px;
+        width: 98%;
+        margin: 0 auto; 
+        display: flex;
+        flex-direction: column;
+        .centerCenter();
+        
+
+    }
+
+    nav {
+        width:50%;
+        display: flex;
+        justify-content: space-between;
+
+        @media @phone {
+            width:90%;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color:@river-bend;
+        font-size: 1.6rem;
+
+        
+    }
+
+    h1, nav {
+        .mart(1rem);
+        .marb(1rem);
+    }
+
+
+
+
+    
+    //***** For debugging purposes - comment out after use
+    // background-color: black;
+
+    //border:1px solid black;
+    // * {
+    //     border:1px solid black;
+    // }
+
+
+
+
+} // .navSection
